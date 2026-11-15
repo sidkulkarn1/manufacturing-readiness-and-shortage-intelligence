@@ -1,0 +1,8 @@
+numpy
+pandas
+duckdb
+matplotlib
+openpyxl
+pytest
+jupyter
+ipykernel
