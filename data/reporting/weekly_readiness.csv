@@ -1,0 +1,9 @@
+planned_week,total_orders,ready_orders,at_risk_orders,blocked_orders,missing_component_units,readiness_rate_pct
+1,4,4,0,0,0,100.0
+2,4,4,0,0,0,100.0
+3,4,2,2,0,0,50.0
+4,4,0,4,0,0,0.0
+5,4,0,2,2,78,0.0
+6,4,0,0,4,9273,0.0
+7,3,0,0,3,98,0.0
+8,3,0,0,3,210,0.0

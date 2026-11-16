@@ -1,0 +1,9 @@
+supplier_id,supplier_name,region,short_components,affected_production_orders,shortage_exception_lines,total_shortage_units,modeled_missing_material_value_usd,earliest_material_required_date,longest_component_lead_time_days
+SUP-008,Simulated Supplier 08,Mexico,11,9,40,987,185495.04,2027-02-01,47
+SUP-002,Simulated Supplier 02,US West,10,4,40,726,52371.66,2027-02-08,41
+SUP-005,Simulated Supplier 05,Germany,20,12,76,2329,362351.67,2027-02-01,48
+SUP-001,Simulated Supplier 01,US Midwest,7,7,27,657,85167.60,2027-02-08,49
+SUP-003,Simulated Supplier 03,US Northeast,7,4,28,726,152554.71,2027-02-08,48
+SUP-004,Simulated Supplier 04,US Southeast,16,4,64,1452,177460.47,2027-02-08,47
+SUP-006,Simulated Supplier 06,Japan,18,7,71,1284,196166.46,2027-02-08,47
+SUP-007,Simulated Supplier 07,Taiwan,20,6,78,1498,262412.34,2027-02-01,44

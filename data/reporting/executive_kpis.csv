@@ -1,0 +1,2 @@
+total_production_orders,ready_orders,at_risk_orders,blocked_orders,readiness_rate_pct,unique_short_components,shortage_exception_lines,total_shortage_units,critical_short_components,modeled_missing_material_value_usd,standard_reference_delay_days,targeted_delay_days,delay_days_reduced,total_shortage_lines,expedited_lines,targeted_procurement_cost_usd,targeted_additional_spend_usd,savings_vs_expedite_all_usd
+30,10,8,12,33.33,109,424,9659,55,1473979.95,93,8,85,424,101,1627989.96,154010.01,214500.11

@@ -1,0 +1,5 @@
+product_family_id,total_orders,ready_orders,at_risk_orders,blocked_orders,total_missing_component_units,modeled_missing_material_value_usd,illustrative_delay_days,blocked_order_pct
+FAM-01,8,4,2,2,78,14703.91,40,25.0
+FAM-03,7,2,2,3,98,36309.14,0,42.86
+FAM-02,8,4,0,4,9273,1411439.37,53,50.0
+FAM-04,7,0,4,3,210,11527.53,0,42.86
