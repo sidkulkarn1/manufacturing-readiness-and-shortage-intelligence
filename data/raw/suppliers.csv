@@ -1,0 +1,9 @@
+supplier_id,supplier_name,region,supplier_status
+SUP-001,Simulated Supplier 01,US Midwest,ACTIVE
+SUP-002,Simulated Supplier 02,US West,ACTIVE
+SUP-003,Simulated Supplier 03,US Northeast,ACTIVE
+SUP-004,Simulated Supplier 04,US Southeast,ACTIVE
+SUP-005,Simulated Supplier 05,Germany,ACTIVE
+SUP-006,Simulated Supplier 06,Japan,ACTIVE
+SUP-007,Simulated Supplier 07,Taiwan,ACTIVE
+SUP-008,Simulated Supplier 08,Mexico,ACTIVE

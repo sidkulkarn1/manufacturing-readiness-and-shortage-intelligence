@@ -1,0 +1,20 @@
+{
+  "project": "Manufacturing Readiness & Shortage Intelligence",
+  "data_type": "SYNTHETIC",
+  "random_seed": 2031,
+  "snapshot_date": "2027-01-04",
+  "planning_horizon_end_exclusive": "2027-03-01",
+  "engineering_changes": 12,
+  "qualified_alternative_sources": 40,
+  "disruption_scenarios": 5,
+  "scenario_mode": "INDEPENDENT_BASELINE_COMPARISONS",
+  "assumptions": [
+    "Engineering changes are hypothetical.",
+    "Only approved changes have effective dates.",
+    "Revision B is not interchangeable with revision A.",
+    "Engineering cutovers are applied only in simulations.",
+    "Alternative suppliers are simulated as qualified.",
+    "Disruptions do not alter original baseline datasets.",
+    "Scenario costs and recovery effects require modeling."
+  ]
+}

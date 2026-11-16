@@ -1,0 +1,11 @@
+{
+  "project": "Manufacturing Readiness & Shortage Intelligence",
+  "data_type": "SYNTHETIC",
+  "random_seed": 2027,
+  "purchased_components": 400,
+  "subassemblies": 24,
+  "finished_goods": 4,
+  "suppliers": 8,
+  "product_families": 4,
+  "note": "All records and planning assumptions are simulated."
+}

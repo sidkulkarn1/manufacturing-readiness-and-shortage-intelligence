@@ -1,0 +1,5 @@
+family_id,family_name,finished_good_id
+FAM-01,Avionics Control Modules,FG-001
+FAM-02,Power Distribution Assemblies,FG-002
+FAM-03,Sensor and Communication Modules,FG-003
+FAM-04,Electromechanical Assemblies,FG-004

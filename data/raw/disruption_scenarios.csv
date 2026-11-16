@@ -1,0 +1,6 @@
+scenario_id,scenario_name,event_type,target_type,target_id,effective_date,parameter_name,numeric_value,text_value,description
+SCN-001,Supplier Delivery Disruption,SUPPLIER_DELAY,PURCHASE_ORDER,PO-00020,2027-01-04,additional_delay_days,14,,Add 14 days to the expected receipt date.
+SCN-002,Additional Quality Hold,QUALITY_HOLD,INVENTORY_RECORD,INV-00351,2027-01-04,additional_hold_qty,10,,Place additional unreserved material on hold.
+SCN-003,Warehouse Inventory Damage,INVENTORY_LOSS,INVENTORY_RECORD,INV-00574,2027-01-04,lost_qty,4,,"Remove damaged, unreserved inventory."
+SCN-004,Priority Production Increase,DEMAND_INCREASE,PRODUCTION_ORDER,MO-0008,2027-01-04,additional_finished_units,2,,Increase finished-unit requirements for one order.
+SCN-005,Engineering Revision Cutover,REVISION_CUTOVER,ENGINEERING_CHANGE,EC-008,2027-01-18,required_component_revision,,B,Evaluate new revision requirements after cutover.

@@ -1,0 +1,21 @@
+{
+  "data_type": "SYNTHETIC",
+  "random_seed": 2030,
+  "snapshot_date": "2027-01-04",
+  "inventory_locations": [
+    "STOCK-01",
+    "STOCK-02"
+  ],
+  "inventory_records": 800,
+  "allocation_records": 809,
+  "purchase_order_records": 286,
+  "modeling_notes": [
+    "On-hand inventory includes quality-held units.",
+    "Reservations are part of on-hand stock, not additional stock.",
+    "Both storage locations are within one production site.",
+    "Purchase orders are open at the planning snapshot.",
+    "Supplier delays and costs are simulated.",
+    "Supply quantities use full-horizon gross BOM demand.",
+    "Time-phased netting will be performed in the MRP engine."
+  ]
+}

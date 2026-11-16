@@ -1,0 +1,39 @@
+{
+  "project": "Manufacturing Readiness & Shortage Intelligence",
+  "data_type": "SYNTHETIC",
+  "simulation_profile": "BALANCED_BASELINE_V2",
+  "random_seed": 2032,
+  "snapshot_date": "2027-01-04",
+  "design_groups": {
+    "stock_coverage": 10,
+    "inbound_dependent": 8,
+    "shortage_exposed": 12
+  },
+  "critical_bottleneck_parts": [
+    "CMP-0005",
+    "CMP-0075",
+    "CMP-0086",
+    "CMP-0116",
+    "CMP-0160",
+    "CMP-0185",
+    "CMP-0223",
+    "CMP-0230",
+    "CMP-0260",
+    "CMP-0321",
+    "CMP-0373",
+    "CMP-0385"
+  ],
+  "inventory_records": 800,
+  "allocation_records": 1000,
+  "purchase_order_records": 300,
+  "assumptions": [
+    "Supply conditions are intentionally simulated.",
+    "Existing reservations are protected.",
+    "Quality-held materials are not usable.",
+    "Open purchase orders are available on receipt date.",
+    "Three critical components per family are constrained.",
+    "No engineering revision substitution is assumed.",
+    "Design groups are not calculated readiness outcomes.",
+    "Recalibration is not a recovery improvement."
+  ]
+}
