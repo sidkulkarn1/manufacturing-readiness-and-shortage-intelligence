@@ -4,7 +4,7 @@ from collections import Counter, defaultdict
 import csv
 import random
 
-# ============================================================
+# ============================================================python3 scripts/generate_bom.py
 # Phase 1 / Step 2: Multi-Level Manufacturing BOM
 # ============================================================
 

@@ -6,7 +6,7 @@ import csv
 import json
 import random
 
-# ============================================================
+# ============================================================python3 scripts/generate_disruptions.py
 # Phase 1 / Step 5: Engineering Changes & Disruptions
 # ============================================================
 
