@@ -1,0 +1,619 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20263.26.1022.1645                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='a7a856247042e5b8071b7396bacba974dfb8063535aef6f1649abb1a9a4b4416' _.fcp.WorkbookFingerprinting.true...creator-author-id='a7a856247042e5b8071b7396bacba974dfb8063535aef6f1649abb1a9a4b4416' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='4117906c0c356b27480b104b751617989d9c394845c3cd15e4994a0e83aa65ba' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='4117906c0c356b27480b104b751617989d9c394845c3cd15e4994a0e83aa65ba' original-version='18.1' source-build='2026.3.0 (20263.26.1022.1645)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='readiness_orders' inline='true' name='federated.08hy5800whpf9v11vyds3147fnlk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='readiness_orders' name='textscan.07rbxz6116rtcq13wz7an0mglegs'>
+            <connection class='textscan' directory='/Users/sidkulkarni/Desktop/supply-chain-portfolio/manufacturing-readiness-and-shortage-intelligence/data/reporting' filename='readiness_orders.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.07rbxz6116rtcq13wz7an0mglegs' name='readiness_orders.csv' table='[readiness_orders#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='production_order_id' ordinal='0' />
+            <column datatype='string' name='finished_good_id' ordinal='1' />
+            <column datatype='string' name='product_family_id' ordinal='2' />
+            <column datatype='string' name='production_site_id' ordinal='3' />
+            <column datatype='string' name='priority' ordinal='4' />
+            <column datatype='integer' name='order_quantity' ordinal='5' />
+            <column datatype='integer' name='planned_week' ordinal='6' />
+            <column datatype='date' name='planned_start_date' ordinal='7' />
+            <column datatype='date' name='material_required_date' ordinal='8' />
+            <column datatype='date' name='planned_due_date' ordinal='9' />
+            <column datatype='string' name='readiness_status' ordinal='10' />
+            <column datatype='integer' name='required_component_count' ordinal='11' />
+            <column datatype='integer' name='shortage_component_count' ordinal='12' />
+            <column datatype='integer' name='total_shortage_units' ordinal='13' />
+            <column datatype='integer' name='inbound_dependent_component_count' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>production_order_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[production_order_id]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>production_order_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>finished_good_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[finished_good_id]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>finished_good_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_family_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[product_family_id]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>product_family_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>production_site_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[production_site_id]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>production_site_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>priority</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[priority]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>priority</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order_quantity]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>order_quantity</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>planned_week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[planned_week]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>planned_week</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>planned_start_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[planned_start_date]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>planned_start_date</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>material_required_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[material_required_date]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>material_required_date</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>planned_due_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[planned_due_date]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>planned_due_date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>readiness_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[readiness_status]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>readiness_status</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>required_component_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[required_component_count]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>required_component_count</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shortage_component_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shortage_component_count]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>shortage_component_count</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_shortage_units</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_shortage_units]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>total_shortage_units</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inbound_dependent_component_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[inbound_dependent_component_count]</local-name>
+            <parent-name>[readiness_orders.csv]</parent-name>
+            <remote-alias>inbound_dependent_component_count</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='readiness_orders.csv' datatype='table' name='[__tableau_internal_object_id__].[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]' role='measure' type='quantitative' />
+      <column caption='Finished Good Id' datatype='string' name='[finished_good_id]' role='dimension' type='nominal' />
+      <column caption='Inbound Dependent Component Count' datatype='integer' name='[inbound_dependent_component_count]' role='measure' type='quantitative' />
+      <column caption='Material Required Date' datatype='date' name='[material_required_date]' role='dimension' type='ordinal' />
+      <column caption='Order Quantity' datatype='integer' name='[order_quantity]' role='measure' type='quantitative' />
+      <column caption='Planned Due Date' datatype='date' name='[planned_due_date]' role='dimension' type='ordinal' />
+      <column caption='Planned Start Date' datatype='date' name='[planned_start_date]' role='dimension' type='ordinal' />
+      <column caption='Planned Week' datatype='integer' name='[planned_week]' role='dimension' type='quantitative' />
+      <column caption='Priority' datatype='string' name='[priority]' role='dimension' type='nominal' />
+      <column caption='Product Family Id' datatype='string' name='[product_family_id]' role='dimension' type='nominal' />
+      <column caption='Production Order Id' datatype='string' name='[production_order_id]' role='dimension' type='nominal' />
+      <column caption='Production Site Id' datatype='string' name='[production_site_id]' role='dimension' type='nominal' />
+      <column caption='Readiness Status' datatype='string' name='[readiness_status]' role='dimension' type='nominal' />
+      <column caption='Required Component Count' datatype='integer' name='[required_component_count]' role='measure' type='quantitative' />
+      <column caption='Shortage Component Count' datatype='integer' name='[shortage_component_count]' role='measure' type='quantitative' />
+      <column caption='Total Shortage Units' datatype='integer' name='[total_shortage_units]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/9c/495l1cs96zj_67bnbpkg5lm80000gn/T/tableau-temp/#TableauTemp_0i2vaop0nci8ib11lec371v5wkv1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/17/2026 02:14:29 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>production_order_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[production_order_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>production_order_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>finished_good_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[finished_good_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>finished_good_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_family_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_family_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_family_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>production_site_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[production_site_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>production_site_id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>priority</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[priority]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>priority</remote-alias>
+              <ordinal>4</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[order_quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_quantity</remote-alias>
+              <ordinal>5</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>planned_week</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[planned_week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>planned_week</remote-alias>
+              <ordinal>6</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>planned_start_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[planned_start_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>planned_start_date</remote-alias>
+              <ordinal>7</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>material_required_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[material_required_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>material_required_date</remote-alias>
+              <ordinal>8</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>planned_due_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[planned_due_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>planned_due_date</remote-alias>
+              <ordinal>9</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>readiness_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[readiness_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>readiness_status</remote-alias>
+              <ordinal>10</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>required_component_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[required_component_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>required_component_count</remote-alias>
+              <ordinal>11</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shortage_component_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[shortage_component_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shortage_component_count</remote-alias>
+              <ordinal>12</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_shortage_units</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_shortage_units]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_shortage_units</remote-alias>
+              <ordinal>13</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>inbound_dependent_component_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[inbound_dependent_component_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>inbound_dependent_component_count</remote-alias>
+              <ordinal>14</ordinal>
+              <family>readiness_orders.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='readiness_orders.csv' id='readiness_orders.csv_32C56741C3684CF680D8ABA34F31CC14'>
+            <properties context=''>
+              <relation connection='textscan.07rbxz6116rtcq13wz7an0mglegs' name='readiness_orders.csv' table='[readiness_orders#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='production_order_id' ordinal='0' />
+                  <column datatype='string' name='finished_good_id' ordinal='1' />
+                  <column datatype='string' name='product_family_id' ordinal='2' />
+                  <column datatype='string' name='production_site_id' ordinal='3' />
+                  <column datatype='string' name='priority' ordinal='4' />
+                  <column datatype='integer' name='order_quantity' ordinal='5' />
+                  <column datatype='integer' name='planned_week' ordinal='6' />
+                  <column datatype='date' name='planned_start_date' ordinal='7' />
+                  <column datatype='date' name='material_required_date' ordinal='8' />
+                  <column datatype='date' name='planned_due_date' ordinal='9' />
+                  <column datatype='string' name='readiness_status' ordinal='10' />
+                  <column datatype='integer' name='required_component_count' ordinal='11' />
+                  <column datatype='integer' name='shortage_component_count' ordinal='12' />
+                  <column datatype='integer' name='total_shortage_units' ordinal='13' />
+                  <column datatype='integer' name='inbound_dependent_component_count' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C1356B5B-17F6-497C-B514-27E75D9865B0}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D0D55669-B914-4070-97EA-5FD9B2BB0314}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
