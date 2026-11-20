@@ -86,3 +86,25 @@ The saved validation report documents 23 manufacturing integrity checks, agreeme
 All source records and operating assumptions are synthetic. Material values and procurement premiums are modeled. The analysis does not optimize labor, equipment capacity, detailed routing, or simultaneous factory execution. Internal action screening is not a fully optimized allocation or schedule.
 
 The most useful extensions are capacity-aware recovery, uncertainty in supplier arrivals, protected allocation rules, and validation with actual operating data where authorized. See the [assumptions](docs/assumptions.md) and [scope](docs/project_scope.md) for interpretation boundaries.
+
+
+## Challenges I Addressed
+
+The main challenge was connecting a component shortage list to order-level recovery decisions while avoiding double-counted inventory and overstated schedule benefits.
+
+| Challenge | How I addressed it | Why it mattered |
+|---|---|---|
+| Shared component demand runs through a multi-level BOM | I exploded requirements and accounted for inventory allocations when assessing production orders. | Readiness reflected the material requirements of each order and avoided treating reserved inventory as freely available. |
+| Shortage volume alone did not identify the production-start constraints | I connected component exceptions to modeled order delays and recovery dates. | Procurement priorities reflected schedule impact as well as material exposure. |
+| Expediting every exception could spend more for the same recovery | I compared standard purchasing, full expediting, and targeted expediting against their modeled delay outcomes and incremental procurement spending. | The recommendation favored the targeted strategy under the documented assumptions and retained its residual delays. |
+| Internal reallocation could transfer a shortage to another order | I screened reallocation and resequencing candidates rather than presenting them as a fully optimized factory schedule. | Candidate actions remained proposals requiring allocation protection and execution checks. |
+| Synthetic findings needed a clear evidence boundary | I reconciled readiness, shortage, purchasing, and recovery exports and disclosed the synthetic records and modeled assumptions throughout the case study. | Internal consistency was distinguished from proof of real supplier performance or realized savings. |
+
+Material readiness does not establish shop-floor capacity or complete execution readiness. Recovery dates depend on the assumed arrival dates, priorities, and purchasing conditions.
+
+## Opportunities for Improvement
+
+1. **Add capacity-aware recovery.** Incorporate labor, equipment, routing, and production constraints to test whether material recovery also supports an executable shop-floor plan.
+2. **Test uncertainty in supplier arrivals.** Evaluate recovery robustness under plausible lead-time variation rather than relying only on the reference arrival dates.
+3. **Strengthen internal allocation decisions.** Add protected reservations and explicit order-priority rules, then evaluate reallocation and resequencing without shifting unacceptable risk to other orders.
+4. **Validate against authorized operating evidence.** Compare the synthetic model's assumptions with actual BOM, inventory, purchase-order, and production records where access is permitted; retain a clear distinction between simulated and observed outcomes.
