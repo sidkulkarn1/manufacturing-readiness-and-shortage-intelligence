@@ -1,5 +1,7 @@
 # Data dictionary
 
+**Project:** [Manufacturing Readiness & Shortage Intelligence](../README.md)
+
 Start with the reporting table that matches your question. For a late start, find the order in `production_recovery.csv`, then use its `production_order_id` to find missing components in `shortage_detail.csv`. To investigate one of those components across the schedule, use its part ID and revision in `shortage_priority.csv`.
 
 ## Measures and identifiers

@@ -138,7 +138,6 @@ def main():
         print(f"Modeled gross material value: ${summary[2]:,.2f}")
 
         print("\nSQL03 validation: PASSED")
-        print("Phase 2 / SQL03 completed successfully.")
 
     finally:
         con.close()

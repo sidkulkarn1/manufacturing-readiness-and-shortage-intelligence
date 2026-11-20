@@ -224,7 +224,6 @@ def main():
         print(f"Readiness rate: {rate}%")
 
         print("\nSQL04 validation: PASSED")
-        print("Phase 2 / SQL04 completed successfully.")
 
     finally:
         con.close()

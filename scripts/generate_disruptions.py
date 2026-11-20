@@ -7,7 +7,7 @@ import json
 import random
 
 # ============================================================python3 scripts/generate_disruptions.py
-# Phase 1 / Step 5: Engineering Changes & Disruptions
+# Engineering Changes & Disruptions
 # ============================================================
 
 SEED = 2031
@@ -564,7 +564,6 @@ def main():
         json.dump(manifest, f, indent=2)
 
     print("Created disruption_manifest.json")
-    print("\nPhase 1 / Step 5 completed successfully.")
 
 
 if __name__ == "__main__":

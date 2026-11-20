@@ -1,5 +1,7 @@
 # Can the scheduled orders start with the material available?
 
+**Project:** [Manufacturing Readiness & Shortage Intelligence](../README.md)
+
 On January 4, 2027, a simulated aerospace electronics manufacturer has 30 production orders on its eight-week schedule. Ten orders have all required components covered by stock. Eight depend on incoming deliveries arriving by the day the material is needed. The remaining 12 have shortages even after the model counts expected deliveries. The material readiness rate is **33.33%** (10 of 30).
 
 ## Where a planner would look first

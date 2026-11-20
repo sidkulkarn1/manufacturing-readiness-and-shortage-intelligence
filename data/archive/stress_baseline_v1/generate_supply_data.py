@@ -7,7 +7,7 @@ import json
 import random
 
 # ============================================================
-# Phase 1 / Step 4: Inventory, Allocations & Purchase Orders
+# Inventory, Allocations & Purchase Orders
 # ============================================================
 
 SEED = 2030
@@ -471,7 +471,6 @@ def main():
         json.dump(manifest, f, indent=2)
 
     print("Created supply_manifest.json")
-    print("\nPhase 1 / Step 4 completed successfully.")
 
 
 if __name__ == "__main__":

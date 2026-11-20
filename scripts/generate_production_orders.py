@@ -6,7 +6,7 @@ import csv
 import random
 
 # ============================================================
-# Phase 1 / Step 3: Production Orders & Schedule
+# Production Orders & Schedule
 # ============================================================
 
 SEED = 2029
@@ -222,10 +222,6 @@ def main():
     validate_orders(orders, finished_goods)
 
     export_orders(orders)
-
-    print(
-        "\nPhase 1 / Step 3 completed successfully."
-    )
 
 
 if __name__ == "__main__":

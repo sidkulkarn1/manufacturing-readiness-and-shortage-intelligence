@@ -443,8 +443,6 @@ def main():
 
         validate_core_tables(con)
         run_integrity_checks(con)
-
-        print("\nPhase 2 / SQL02 completed successfully.")
         print(f"Database: {DB_PATH.name}")
 
     finally:

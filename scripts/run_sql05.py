@@ -39,7 +39,7 @@ def main():
     con = duckdb.connect(str(DB_PATH))
 
     try:
-        # Confirm SQL04 was completed.
+        # Require the material-readiness outputs before shortage analysis.
         con.execute("""
             SELECT COUNT(*)
             FROM planning.component_readiness
@@ -383,7 +383,6 @@ def main():
 
         print("\nSQL05 validation: PASSED")
         print("Integrity checks passed: 12")
-        print("Phase 2 / SQL05 completed successfully.")
 
     finally:
         con.close()

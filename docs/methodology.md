@@ -1,5 +1,7 @@
 # From a production order to a recovery decision
 
+**Project:** [Manufacturing Readiness & Shortage Intelligence](../README.md)
+
 The analysis follows one question through the data: can every component reach a production order in time for its planned start? The first calculation measures coverage from existing supply. The second estimates what would happen if a buyer ordered the missing units.
 
 1. **Load the planning snapshot.** Python generates synthetic CSV records. DuckDB loads them and creates typed manufacturing tables for products, parts, scheduled orders, stock, and receipts. Integrity checks verify identifiers, references, revisions, dates, and allocations. [Schema](../sql/01_create_schema.sql) · [Validation report](validation_report.md)
@@ -12,3 +14,30 @@ The analysis follows one question through the data: can every component reach a 
 ## Follow one order
 
 Filter the [order recovery table](../data/reporting/production_recovery.csv) to `MO-0013`. Its planned start is February 1. Three component shortages leave 42 units uncovered. Standard replenishment implies a 20-day start delay. Expediting two lines costs an additional $1,583.12 and brings the modeled start forward to February 5, leaving four days of delay. Filter the [shortage detail](../data/reporting/shortage_detail.csv) by the same order ID to inspect the three component lines. The order keeps its baseline blocked status alongside the modeled recovery date because those fields answer different planning questions.
+
+## Rebuild from the project root
+
+The documented development environment is Python 3.14.10 and DuckDB 2.0.0. Install the recorded dependency in a local environment:
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+Generation and export scripts write to fixed project paths. Preserve any manually edited synthetic inputs or outputs before regeneration. Execute the stages sequentially from the repository root:
+
+```sh
+set -e
+for stage in data_generator generate_bom generate_production_orders \
+             generate_supply_data generate_disruptions build_database \
+             validate_database run_sql03 run_sql04 run_sql05 run_sql06 \
+             run_sql07 run_sql07b run_sql07c run_sql08
+do
+    python "scripts/${stage}.py"
+done
+```
+
+The generated database is `data/processed/manufacturing_readiness.duckdb`; the ten dashboard datasets are written to `data/reporting/`. The reporting runner checks its exports. Open the Tableau workbook separately and relink CSV connections if the local folder has changed. Screenshots are static exports and must be refreshed separately after analytical changes.
+
+The archived stress baseline is retained for provenance; it is not the current planning snapshot. Its directory name is a functional historical identifier.

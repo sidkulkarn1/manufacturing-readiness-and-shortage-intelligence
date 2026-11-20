@@ -5,7 +5,7 @@ import csv
 import random
 
 # ============================================================python3 scripts/generate_bom.py
-# Phase 1 / Step 2: Multi-Level Manufacturing BOM
+# Multi-Level Manufacturing BOM
 # ============================================================
 
 SEED = 2028
@@ -281,8 +281,6 @@ def main():
 
     validate_bom(parts, bom)
     export_bom(bom)
-
-    print("\nPhase 1 / Step 2 completed successfully.")
 
 
 if __name__ == "__main__":

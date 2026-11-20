@@ -1,5 +1,7 @@
 # Planning assumptions
 
+**Project:** [Manufacturing Readiness & Shortage Intelligence](../README.md)
+
 The results describe one synthetic planning case. The January 4, 2027 snapshot represents what a planner knows at the start of the eight-week horizon. Changing a receipt date, component revision, or purchasing lead time can change which orders have enough material.
 
 | Subject | Rule used in the model | Why it matters |

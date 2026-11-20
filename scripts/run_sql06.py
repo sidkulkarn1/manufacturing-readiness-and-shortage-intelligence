@@ -336,7 +336,6 @@ def main():
 
         print("\nSQL06 validation: PASSED")
         print("Integrity checks passed: 12")
-        print("Phase 2 / SQL06 completed successfully.")
 
     finally:
         con.close()

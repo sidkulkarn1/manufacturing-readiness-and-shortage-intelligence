@@ -643,7 +643,6 @@ def main():
         json.dump(manifest, f, indent=2)
 
     print("Created supply_manifest.json")
-    print("\nPhase 1 supply recalibration completed.")
 
 
 if __name__ == "__main__":

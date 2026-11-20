@@ -1,5 +1,7 @@
 # Project scope
 
+**Project:** [Manufacturing Readiness & Shortage Intelligence](../README.md)
+
 A production order tells a factory which finished product to build, how many units to make, and when work should start. For an aerospace electronics assembly, one missing component can hold up the entire order. This project asks whether a planner at a simulated manufacturer could identify those orders early enough to evaluate a purchasing response.
 
 ## The planning case

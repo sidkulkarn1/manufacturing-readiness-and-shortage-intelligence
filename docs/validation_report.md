@@ -1,5 +1,7 @@
 # Validation report
 
+**Project:** [Manufacturing Readiness & Shortage Intelligence](../README.md)
+
 The published planning snapshot passed three checks: the manufacturing records satisfy the database integrity rules, every reporting export matches its DuckDB view, and the headline results can be reconstructed from the detailed orders and shortages.
 
 ## Manufacturing data integrity

@@ -343,7 +343,6 @@ def main():
 
         print("\nSQL07 validation: PASSED")
         print("Integrity checks passed: 12")
-        print("Phase 2 / SQL07 procurement scenarios complete.")
 
     finally:
         con.close()

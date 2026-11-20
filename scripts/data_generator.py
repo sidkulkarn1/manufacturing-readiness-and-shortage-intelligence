@@ -6,7 +6,7 @@ import json
 import random
 
 # ============================================================
-# Phase 1: Synthetic Manufacturing Master Data
+# Synthetic Manufacturing Master Data
 # ============================================================
 
 SEED = 2027
@@ -226,7 +226,6 @@ def main():
         json.dump(manifest, f, indent=2)
 
     print("Created dataset_manifest.json")
-    print("\nPhase 1 master data generation complete.")
 
 
 if __name__ == "__main__":
